@@ -27,4 +27,5 @@ Open your browser and navigate to:
 http://localhost:3000
 
 Login with test credentials
-# (email: test@example.com, password: password)
+
+* email: test@example.com, password: password
