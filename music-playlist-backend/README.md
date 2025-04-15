@@ -30,18 +30,14 @@ npm run db:seed
 # Running the Application
 
 # Development mode
-npm run start:dev
-# or
-yarn start:dev
+npm run start:dev or yarn start:dev
 
 # Production mode
 npm run build
-npm run start:prod
-# or
-yarn build
+npm run start:prod or yarn build
 yarn start:prod
 
-* The API will be available at http://localhost:3001/api
+The API will be available at http://localhost:3001/api
 
 # Run Prisma Studio for visual database management
 npm run db:studio
