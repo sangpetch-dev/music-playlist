@@ -1,0 +1,11 @@
+services:
+  db: 
+    image: 'postgres:16.3-alpine3.20'
+    ports:
+      - 9112:5432  # Using non-standard port
+    environment:
+      POSTGRES_USER: myapp
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: music_playlist  # Adding database name
+    volumes:
+      - ./data/pg:/var/lib/postgresql/data

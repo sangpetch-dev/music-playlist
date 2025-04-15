@@ -2,6 +2,12 @@
 /dist
 /node_modules
 
+# package managers
+.npm
+.yarn-integrity
+yarn.lock
+package-lock.json
+
 # Logs
 logs
 *.log

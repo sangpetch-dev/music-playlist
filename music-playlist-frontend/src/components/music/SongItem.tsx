@@ -10,6 +10,7 @@ interface SongItemProps {
   index?: number;
   showActions?: boolean;
   onAddToPlaylist?: (song: Song) => void;
+  isExternal?: boolean;
 }
 
 const SongItem: React.FC<SongItemProps> = ({
@@ -17,6 +18,7 @@ const SongItem: React.FC<SongItemProps> = ({
   index,
   showActions = true,
   onAddToPlaylist,
+  isExternal = false
 }) => {
   const { currentSong, isPlaying, play, togglePlay, addToQueue } = usePlayer();
   const isCurrentSong = currentSong?.id === song.id;
@@ -66,6 +68,18 @@ const SongItem: React.FC<SongItemProps> = ({
       <SongInfo>
         <SongTitle style={{ color: isCurrentSong ? '#1db954' : 'white' }}>
           {song.title}
+          {isExternal && (
+            <span style={{
+              fontSize: '0.7rem',
+              color: '#1DB954',
+              marginLeft: '8px',
+              padding: '2px 6px',
+              backgroundColor: 'rgba(29, 185, 84, 0.1)',
+              borderRadius: '4px'
+            }}>
+              Spotify
+            </span>
+          )}
         </SongTitle>
         <SongArtist>{song.artist}</SongArtist>
       </SongInfo>
