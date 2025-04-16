@@ -18,7 +18,7 @@ export const mockSongs: Song[] = [
     artist: 'Ed Sheeran',
     album: 'Divide',
     duration: 235,
-    coverImage: 'https://via.placeholder.com/300x300?text=Shape+of+You',
+    coverImage: 'https://placehold.co/300x300?text=Shape+of+You',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   },
   {
@@ -27,7 +27,7 @@ export const mockSongs: Song[] = [
     artist: 'The Weeknd',
     album: 'After Hours',
     duration: 203,
-    coverImage: 'https://via.placeholder.com/300x300?text=Blinding+Lights',
+    coverImage: 'https://placehold.co/300x300?text=Blinding+Lights',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
   },
   {
@@ -36,7 +36,7 @@ export const mockSongs: Song[] = [
     artist: 'Tones and I',
     album: 'The Kids Are Coming',
     duration: 210,
-    coverImage: 'https://via.placeholder.com/300x300?text=Dance+Monkey',
+    coverImage: 'https://placehold.co/300x300?text=Dance+Monkey',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
   },
   {
@@ -45,7 +45,7 @@ export const mockSongs: Song[] = [
     artist: 'Dua Lipa',
     album: 'Future Nostalgia',
     duration: 183,
-    coverImage: 'https://via.placeholder.com/300x300?text=Dont+Start+Now',
+    coverImage: 'https://placehold.co/300x300?text=Dont+Start+Now',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3',
   },
   {
@@ -54,7 +54,7 @@ export const mockSongs: Song[] = [
     artist: 'Harry Styles',
     album: 'Fine Line',
     duration: 174,
-    coverImage: 'https://via.placeholder.com/300x300?text=Watermelon+Sugar',
+    coverImage: 'https://placehold.co/300x300?text=Watermelon+Sugar',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3',
   },
   {
@@ -63,7 +63,7 @@ export const mockSongs: Song[] = [
     artist: 'Billie Eilish',
     album: 'When We All Fall Asleep, Where Do We Go?',
     duration: 194,
-    coverImage: 'https://via.placeholder.com/300x300?text=Bad+Guy',
+    coverImage: 'https://placehold.co/300x300?text=Bad+Guy',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3',
   },
   {
@@ -72,7 +72,7 @@ export const mockSongs: Song[] = [
     artist: 'Post Malone',
     album: 'Hollywood\'s Bleeding',
     duration: 215,
-    coverImage: 'https://via.placeholder.com/300x300?text=Circles',
+    coverImage: 'https://placehold.co/300x300?text=Circles',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3',
   },
   {
@@ -81,7 +81,7 @@ export const mockSongs: Song[] = [
     artist: 'Lewis Capaldi',
     album: 'Divinely Uninspired to a Hellish Extent',
     duration: 182,
-    coverImage: 'https://via.placeholder.com/300x300?text=Someone+You+Loved',
+    coverImage: 'https://placehold.co/300x300?text=Someone+You+Loved',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3',
   },
   {
@@ -90,7 +90,7 @@ export const mockSongs: Song[] = [
     artist: 'Shawn Mendes, Camila Cabello',
     album: 'Señorita',
     duration: 191,
-    coverImage: 'https://via.placeholder.com/300x300?text=Senorita',
+    coverImage: 'https://placehold.co/300x300?text=Senorita',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
   },
   {
@@ -99,7 +99,7 @@ export const mockSongs: Song[] = [
     artist: 'Maroon 5',
     album: 'Memories',
     duration: 189,
-    coverImage: 'https://via.placeholder.com/300x300?text=Memories',
+    coverImage: 'https://placehold.co/300x300?text=Memories',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3',
   },
   {
@@ -108,7 +108,7 @@ export const mockSongs: Song[] = [
     artist: 'Jawsh 685, Jason Derulo',
     album: 'Savage Love',
     duration: 171,
-    coverImage: 'https://via.placeholder.com/300x300?text=Savage+Love',
+    coverImage: 'https://placehold.co/300x300?text=Savage+Love',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3',
   },
   {
@@ -117,7 +117,7 @@ export const mockSongs: Song[] = [
     artist: 'BTS',
     album: 'Dynamite',
     duration: 199,
-    coverImage: 'https://via.placeholder.com/300x300?text=Dynamite',
+    coverImage: 'https://placehold.co/300x300?text=Dynamite',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3',
   },
   {
@@ -126,7 +126,7 @@ export const mockSongs: Song[] = [
     artist: '24kGoldn, iann dior',
     album: 'Mood',
     duration: 141,
-    coverImage: 'https://via.placeholder.com/300x300?text=Mood',
+    coverImage: 'https://placehold.co/300x300?text=Mood',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3',
   },
   {
@@ -135,7 +135,7 @@ export const mockSongs: Song[] = [
     artist: 'Ariana Grande',
     album: 'Positions',
     duration: 173,
-    coverImage: 'https://via.placeholder.com/300x300?text=Positions',
+    coverImage: 'https://placehold.co/300x300?text=Positions',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3',
   },
   {
@@ -144,7 +144,7 @@ export const mockSongs: Song[] = [
     artist: 'Olivia Rodrigo',
     album: 'Drivers License',
     duration: 242,
-    coverImage: 'https://via.placeholder.com/300x300?text=Drivers+License',
+    coverImage: 'https://placehold.co/300x300?text=Drivers+License',
     previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3',
   },
 ];
@@ -155,7 +155,7 @@ export const mockPlaylists: Playlist[] = [
     id: 'playlist-1',
     name: 'My Favorites',
     description: 'A collection of my favorite songs',
-    coverImage: 'https://via.placeholder.com/300x300?text=My+Favorites',
+    coverImage: 'https://placehold.co/300x300?text=My+Favorites',
     userId: 'user-1',
     createdAt: '2023-01-01T00:00:00Z',
     updatedAt: '2023-01-01T00:00:00Z',
@@ -165,7 +165,7 @@ export const mockPlaylists: Playlist[] = [
     id: 'playlist-2',
     name: 'Workout Mix',
     description: 'Energetic songs for workout sessions',
-    coverImage: 'https://via.placeholder.com/300x300?text=Workout+Mix',
+    coverImage: 'https://placehold.co/300x300?text=Workout+Mix',
     userId: 'user-1',
     createdAt: '2023-01-02T00:00:00Z',
     updatedAt: '2023-01-02T00:00:00Z',
@@ -175,7 +175,7 @@ export const mockPlaylists: Playlist[] = [
     id: 'playlist-3',
     name: 'Chill Vibes',
     description: 'Relaxing songs for chill moments',
-    coverImage: 'https://via.placeholder.com/300x300?text=Chill+Vibes',
+    coverImage: 'https://placehold.co/300x300?text=Chill+Vibes',
     userId: 'user-1',
     createdAt: '2023-01-03T00:00:00Z',
     updatedAt: '2023-01-03T00:00:00Z',
@@ -455,7 +455,7 @@ export const mockCreatePlaylist = (
     id: `playlist-${Date.now()}`,
     name,
     description,
-    coverImage: coverImage || `https://via.placeholder.com/300x300?text=${encodeURIComponent(name)}`,
+    coverImage: coverImage || `https://placehold.co/300x300?text=${encodeURIComponent(name)}`,
     userId,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),

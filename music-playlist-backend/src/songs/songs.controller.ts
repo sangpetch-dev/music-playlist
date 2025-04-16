@@ -36,8 +36,9 @@ import { UpdateSongDto } from './dtos/update-song.dto';
       @Query('query') query: string,
       @Query('page') page: number = 1,
       @Query('limit') limit: number = 20,
+      @Query('external') external: boolean = false,
     ) {
-      return this.songsService.search(query, page, limit);
+      return this.songsService.search(query, page, limit, external);
     }
   
     @UseGuards(JwtAuthGuard)
@@ -69,6 +70,11 @@ import { UpdateSongDto } from './dtos/update-song.dto';
     @Post('seed')
     seedSongs(@Body() songs: CreateSongDto[]) {
       return this.songsService.seedSongs(songs);
+    }
+
+    @Post('save-external')
+    saveExternalSong(@Body() songData: any) {
+      return this.songsService.saveExternalSong(songData);
     }
   }
   

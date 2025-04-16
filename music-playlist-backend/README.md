@@ -41,3 +41,5 @@ The API will be available at http://localhost:3001/api
 
 # Run Prisma Studio for visual database management
 npm run db:studio
+
+

@@ -14,7 +14,7 @@ export const generateRandomColor = (): string => {
 };
 
 export const getPlaceholderImage = (size: number = 300): string => {
-    return `https://via.placeholder.com/${size}x${size}?text=Music`;
+    return `https://placehold.co/${size}x${size}?text=Music`;
 };
 
 export const debounce = <F extends (...args: any[]) => any>(

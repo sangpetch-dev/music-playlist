@@ -86,9 +86,9 @@ const SongItem: React.FC<SongItemProps> = ({
 
       {showActions && (
         <SongActions>
-          <ActionButton onClick={handleAddToQueue}>
+          {/* <ActionButton onClick={handleAddToQueue}>
             <Add fontSize="small" />
-          </ActionButton>
+          </ActionButton> */}
           <ActionButton onClick={handleAddToPlaylist}>
             <MoreHoriz fontSize="small" />
           </ActionButton>

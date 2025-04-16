@@ -64,6 +64,7 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         playNext();
       });
     }
+
     
     return () => {
       if (audioRef.current) {
@@ -85,9 +86,18 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     }
     
     setCurrentSong(song);
-    
+   
     if (audioRef.current) {
-      audioRef.current.src = song.previewUrl || '';
+      if (song.previewUrl) {
+        audioRef.current.src = song.previewUrl;
+      } else if (song.externalUrl) {
+        audioRef.current.src = song.externalUrl;
+      } else {
+        console.error('No playable audio source found');
+        return;
+      }
+
+      console.log('[audioRef.current.src]', audioRef.current.src)
       audioRef.current.play().then(() => {
         setIsPlaying(true);
       }).catch(error => {
@@ -104,8 +114,14 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       audioRef.current?.pause();
       setIsPlaying(false);
     } else {
-      audioRef.current?.play();
-      setIsPlaying(true);
+      audioRef.current?.play().then(() => {
+        setIsPlaying(true);
+      }).catch(error => {
+        console.error('Error playing audio:', error);
+        window.open(currentSong.externalUrl, '_blank')
+        setIsPlaying(false);
+      });
+      
     }
   };
 

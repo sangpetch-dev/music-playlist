@@ -23,7 +23,7 @@ const PlaylistCard: React.FC<PlaylistCardProps> = ({ playlist, onPlay }) => {
         <PlaylistCover
           src={
             playlist.coverImage ||
-            'https://via.placeholder.com/300x300?text=Playlist'
+            'https://placehold.co/300x300?text=Playlist'
           }
           alt={playlist.name}
         />

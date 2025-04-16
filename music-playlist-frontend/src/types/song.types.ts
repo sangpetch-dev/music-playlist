@@ -7,6 +7,7 @@ export interface Song {
     coverImage?: string;
     previewUrl?: string;
     externalId?: string;
+    externalUrl?: string
   }
   
   export interface SongSearchResult {

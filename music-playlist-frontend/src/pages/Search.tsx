@@ -22,7 +22,7 @@ const Search: React.FC = () => {
   const [selectedSong, setSelectedSong] = useState<Song | null>(null);
   const [showPlaylistModal, setShowPlaylistModal] = useState(false);
   const [showCreatePlaylistModal, setShowCreatePlaylistModal] = useState(false);
-  const [useExternalSearch, setUseExternalSearch] = useState(false);
+  const [useExternalSearch, setUseExternalSearch] = useState(true);
 
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
@@ -49,6 +49,7 @@ const Search: React.FC = () => {
 
   const handleSearch = (query: string) => {
     navigate(`/search?q=${encodeURIComponent(query)}`);
+    performSearch(query)
   };
 
   const handleAddToPlaylist = async (song: Song) => {
@@ -117,7 +118,7 @@ const Search: React.FC = () => {
     <SearchContainer>
       <SearchHeader>
         <SearchBar onSearch={handleSearch} placeholder="What do you want to listen to?" />
-        <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', margin: 'auto', maxWidth: 600, paddingTop: '10px' }}>
           <label style={{ display: 'flex', alignItems: 'center', color: '#b3b3b3', cursor: 'pointer' }}>
             <input
               type="checkbox"

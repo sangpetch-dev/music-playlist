@@ -77,6 +77,9 @@ export class SongsService {
       },
     });
 
+    console.log('[totalLocal]', !useExternal || totalLocal > 0)
+
+
     if (!useExternal || totalLocal > 0) {
       return {
         songs: localSongs,
@@ -88,6 +91,7 @@ export class SongsService {
       };
     }
 
+  
     const externalSongs = await this.externalSearchService.searchSpotify(query, limit);
 
     return {

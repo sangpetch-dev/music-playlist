@@ -52,7 +52,9 @@ export class ExternalSearchService {
     try {
       await this.ensureSpotifyToken();
       
+     
       const response = await this.spotifyApi.searchTracks(query, { limit });
+      
       
       return response.body.tracks.items.map(track => ({
         id: `spotify-${track.id}`,

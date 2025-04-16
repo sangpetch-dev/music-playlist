@@ -5,7 +5,7 @@ export const searchSongs = async (
   query: string,
   page: number = 1,
   limit: number = 20,
-  useExternal: boolean = false
+  useExternal: boolean = true
 ): Promise<{ songs: Song[]; total: number }> => {
   const response = await api.get('/songs/search', {
     params: { query, page, limit, external: useExternal },
